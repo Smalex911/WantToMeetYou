@@ -17,6 +17,12 @@
 		785749E82A4863810032B9A4 /* Ext+UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785749E72A4863810032B9A4 /* Ext+UIApplication.swift */; };
 		785749EA2A4864B90032B9A4 /* SecretData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785749E92A4864B90032B9A4 /* SecretData.swift */; };
 		785749ED2A486C080032B9A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 785749EC2A486C080032B9A4 /* GoogleService-Info.plist */; };
+		785749EF2A4887A20032B9A4 /* Ext+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785749EE2A4887A20032B9A4 /* Ext+Codable.swift */; };
+		785749F22A4888850032B9A4 /* UserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785749F12A4888850032B9A4 /* UserLocation.swift */; };
+		785749F62A4888E20032B9A4 /* UsersGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785749F52A4888E20032B9A4 /* UsersGroup.swift */; };
+		785749FA2A4894770032B9A4 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785749F92A4894770032B9A4 /* UserProfile.swift */; };
+		785749FE2A48A68F0032B9A4 /* Ext+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785749FD2A48A68F0032B9A4 /* Ext+Dictionary.swift */; };
+		78574A012A48A8040032B9A4 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78574A002A48A8040032B9A4 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +38,12 @@
 		785749E72A4863810032B9A4 /* Ext+UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIApplication.swift"; sourceTree = "<group>"; };
 		785749E92A4864B90032B9A4 /* SecretData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretData.swift; sourceTree = "<group>"; };
 		785749EC2A486C080032B9A4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		785749EE2A4887A20032B9A4 /* Ext+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+Codable.swift"; sourceTree = "<group>"; };
+		785749F12A4888850032B9A4 /* UserLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocation.swift; sourceTree = "<group>"; };
+		785749F52A4888E20032B9A4 /* UsersGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersGroup.swift; sourceTree = "<group>"; };
+		785749F92A4894770032B9A4 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		785749FD2A48A68F0032B9A4 /* Ext+Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+Dictionary.swift"; sourceTree = "<group>"; };
+		78574A002A48A8040032B9A4 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		789E3746EFC9481D29DA4C59 /* Pods-WantToMeetYou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WantToMeetYou.debug.xcconfig"; path = "Target Support Files/Pods-WantToMeetYou/Pods-WantToMeetYou.debug.xcconfig"; sourceTree = "<group>"; };
 		E518921C92833E043DCB5D43 /* Pods_WantToMeetYou.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WantToMeetYou.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -86,6 +98,8 @@
 		785749D12A485F020032B9A4 /* WantToMeetYou */ = {
 			isa = PBXGroup;
 			children = (
+				785749F02A4888750032B9A4 /* Models */,
+				785749FF2A48A7DD0032B9A4 /* Services */,
 				785749E62A4863730032B9A4 /* Extensions */,
 				785749D62A485F020032B9A4 /* ViewController.swift */,
 				785749D82A485F020032B9A4 /* Main.storyboard */,
@@ -99,6 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				785749E72A4863810032B9A4 /* Ext+UIApplication.swift */,
+				785749EE2A4887A20032B9A4 /* Ext+Codable.swift */,
+				785749FD2A48A68F0032B9A4 /* Ext+Dictionary.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -114,6 +130,24 @@
 				785749DB2A485F030032B9A4 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		785749F02A4888750032B9A4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				785749F12A4888850032B9A4 /* UserLocation.swift */,
+				785749F92A4894770032B9A4 /* UserProfile.swift */,
+				785749F52A4888E20032B9A4 /* UsersGroup.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		785749FF2A48A7DD0032B9A4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				78574A002A48A8040032B9A4 /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,11 +284,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				785749EF2A4887A20032B9A4 /* Ext+Codable.swift in Sources */,
 				785749E82A4863810032B9A4 /* Ext+UIApplication.swift in Sources */,
 				785749D72A485F020032B9A4 /* ViewController.swift in Sources */,
 				785749D32A485F020032B9A4 /* AppDelegate.swift in Sources */,
+				785749FA2A4894770032B9A4 /* UserProfile.swift in Sources */,
+				78574A012A48A8040032B9A4 /* DataService.swift in Sources */,
+				785749F22A4888850032B9A4 /* UserLocation.swift in Sources */,
+				785749F62A4888E20032B9A4 /* UsersGroup.swift in Sources */,
 				785749D52A485F020032B9A4 /* SceneDelegate.swift in Sources */,
 				785749EA2A4864B90032B9A4 /* SecretData.swift in Sources */,
+				785749FE2A48A68F0032B9A4 /* Ext+Dictionary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

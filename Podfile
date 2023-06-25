@@ -1,8 +1,12 @@
+platform :ios, '13.0'
+
 target 'WantToMeetYou' do
   use_frameworks!
   
-  pod 'Firebase/Crashlytics'
-  pod 'Firebase/Analytics'
+  pod 'FirebaseCrashlytics'
+  pod 'FirebaseAnalytics'
+  pod 'FirebaseAuth'
+  pod 'FirebaseDatabase'
   
   pod 'YandexMapsMobile', '4.3.2-lite'
 

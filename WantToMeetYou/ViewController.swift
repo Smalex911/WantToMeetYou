@@ -6,12 +6,13 @@
 //
 
 import UIKit
-import FirebaseCrashlytics
 import YandexMapsMobile
 
 class ViewController: UIViewController {
     
     @objc public var mapView: YMKMapView!
+    
+    var dataService = DataService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
