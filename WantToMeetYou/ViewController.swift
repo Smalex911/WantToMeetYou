@@ -6,14 +6,18 @@
 //
 
 import UIKit
+import YandexMapsMobile
 
 class ViewController: UIViewController {
-
+    
+    @objc public var mapView: YMKMapView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        mapView = YMKMapView(frame: view.bounds, vulkanPreferred: UIApplication.isM1Simulator())
+        mapView.mapWindow.map.mapType = .vectorMap
+        view.insertSubview(mapView, at: 0)
     }
-
-
 }
 

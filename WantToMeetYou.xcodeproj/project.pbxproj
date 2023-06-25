@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D13FBF7B37230CADFD4588A /* Pods_WantToMeetYou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E518921C92833E043DCB5D43 /* Pods_WantToMeetYou.framework */; };
 		785749D32A485F020032B9A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785749D22A485F020032B9A4 /* AppDelegate.swift */; };
 		785749D52A485F020032B9A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785749D42A485F020032B9A4 /* SceneDelegate.swift */; };
 		785749D72A485F020032B9A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785749D62A485F020032B9A4 /* ViewController.swift */; };
 		785749DA2A485F020032B9A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 785749D82A485F020032B9A4 /* Main.storyboard */; };
 		785749DC2A485F030032B9A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 785749DB2A485F030032B9A4 /* Assets.xcassets */; };
 		785749DF2A485F030032B9A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 785749DD2A485F030032B9A4 /* LaunchScreen.storyboard */; };
+		785749E82A4863810032B9A4 /* Ext+UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785749E72A4863810032B9A4 /* Ext+UIApplication.swift */; };
+		785749EA2A4864B90032B9A4 /* SecretData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785749E92A4864B90032B9A4 /* SecretData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		728D3CCD10EA2948F2A1FBF3 /* Pods-WantToMeetYou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WantToMeetYou.release.xcconfig"; path = "Target Support Files/Pods-WantToMeetYou/Pods-WantToMeetYou.release.xcconfig"; sourceTree = "<group>"; };
 		785749CF2A485F020032B9A4 /* WantToMeetYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WantToMeetYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		785749D22A485F020032B9A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		785749D42A485F020032B9A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,10 @@
 		785749DB2A485F030032B9A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		785749DE2A485F030032B9A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		785749E02A485F030032B9A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		785749E72A4863810032B9A4 /* Ext+UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIApplication.swift"; sourceTree = "<group>"; };
+		785749E92A4864B90032B9A4 /* SecretData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretData.swift; sourceTree = "<group>"; };
+		789E3746EFC9481D29DA4C59 /* Pods-WantToMeetYou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WantToMeetYou.debug.xcconfig"; path = "Target Support Files/Pods-WantToMeetYou/Pods-WantToMeetYou.debug.xcconfig"; sourceTree = "<group>"; };
+		E518921C92833E043DCB5D43 /* Pods_WantToMeetYou.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WantToMeetYou.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D13FBF7B37230CADFD4588A /* Pods_WantToMeetYou.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		000C31A42A023C01EE00FEA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E518921C92833E043DCB5D43 /* Pods_WantToMeetYou.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		23109B3DC9BF41509B484885 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				789E3746EFC9481D29DA4C59 /* Pods-WantToMeetYou.debug.xcconfig */,
+				728D3CCD10EA2948F2A1FBF3 /* Pods-WantToMeetYou.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		785749C62A485F020032B9A4 = {
 			isa = PBXGroup;
 			children = (
 				785749D12A485F020032B9A4 /* WantToMeetYou */,
 				785749D02A485F020032B9A4 /* Products */,
+				23109B3DC9BF41509B484885 /* Pods */,
+				000C31A42A023C01EE00FEA8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +84,33 @@
 		785749D12A485F020032B9A4 /* WantToMeetYou */ = {
 			isa = PBXGroup;
 			children = (
-				785749D22A485F020032B9A4 /* AppDelegate.swift */,
-				785749D42A485F020032B9A4 /* SceneDelegate.swift */,
+				785749E62A4863730032B9A4 /* Extensions */,
 				785749D62A485F020032B9A4 /* ViewController.swift */,
 				785749D82A485F020032B9A4 /* Main.storyboard */,
-				785749DB2A485F030032B9A4 /* Assets.xcassets */,
 				785749DD2A485F030032B9A4 /* LaunchScreen.storyboard */,
-				785749E02A485F030032B9A4 /* Info.plist */,
+				785749EB2A48680B0032B9A4 /* Resources */,
 			);
 			path = WantToMeetYou;
+			sourceTree = "<group>";
+		};
+		785749E62A4863730032B9A4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				785749E72A4863810032B9A4 /* Ext+UIApplication.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		785749EB2A48680B0032B9A4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				785749D22A485F020032B9A4 /* AppDelegate.swift */,
+				785749D42A485F020032B9A4 /* SceneDelegate.swift */,
+				785749E92A4864B90032B9A4 /* SecretData.swift */,
+				785749E02A485F030032B9A4 /* Info.plist */,
+				785749DB2A485F030032B9A4 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +120,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 785749E32A485F030032B9A4 /* Build configuration list for PBXNativeTarget "WantToMeetYou" */;
 			buildPhases = (
+				BCB52A95679650FB1E21D615 /* [CP] Check Pods Manifest.lock */,
 				785749CB2A485F020032B9A4 /* Sources */,
 				785749CC2A485F020032B9A4 /* Frameworks */,
 				785749CD2A485F020032B9A4 /* Resources */,
+				E4816CD8FF11B5AB871835CD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,14 +181,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BCB52A95679650FB1E21D615 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WantToMeetYou-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4816CD8FF11B5AB871835CD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WantToMeetYou/Pods-WantToMeetYou-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WantToMeetYou/Pods-WantToMeetYou-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WantToMeetYou/Pods-WantToMeetYou-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		785749CB2A485F020032B9A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				785749E82A4863810032B9A4 /* Ext+UIApplication.swift in Sources */,
 				785749D72A485F020032B9A4 /* ViewController.swift in Sources */,
 				785749D32A485F020032B9A4 /* AppDelegate.swift in Sources */,
 				785749D52A485F020032B9A4 /* SceneDelegate.swift in Sources */,
+				785749EA2A4864B90032B9A4 /* SecretData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,13 +374,15 @@
 		};
 		785749E42A485F030032B9A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 789E3746EFC9481D29DA4C59 /* Pods-WantToMeetYou.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WantToMeetYou/Info.plist;
+				INFOPLIST_FILE = WantToMeetYou/Resources/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app displays user location arrow";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -309,13 +403,15 @@
 		};
 		785749E52A485F030032B9A4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 728D3CCD10EA2948F2A1FBF3 /* Pods-WantToMeetYou.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WantToMeetYou/Info.plist;
+				INFOPLIST_FILE = WantToMeetYou/Resources/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app displays user location arrow";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
