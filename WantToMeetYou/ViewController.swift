@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseCrashlytics
 import YandexMapsMobile
 
 class ViewController: UIViewController {

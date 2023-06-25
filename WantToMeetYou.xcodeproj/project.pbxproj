@@ -16,6 +16,7 @@
 		785749DF2A485F030032B9A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 785749DD2A485F030032B9A4 /* LaunchScreen.storyboard */; };
 		785749E82A4863810032B9A4 /* Ext+UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785749E72A4863810032B9A4 /* Ext+UIApplication.swift */; };
 		785749EA2A4864B90032B9A4 /* SecretData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785749E92A4864B90032B9A4 /* SecretData.swift */; };
+		785749ED2A486C080032B9A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 785749EC2A486C080032B9A4 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		785749E02A485F030032B9A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		785749E72A4863810032B9A4 /* Ext+UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIApplication.swift"; sourceTree = "<group>"; };
 		785749E92A4864B90032B9A4 /* SecretData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretData.swift; sourceTree = "<group>"; };
+		785749EC2A486C080032B9A4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		789E3746EFC9481D29DA4C59 /* Pods-WantToMeetYou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WantToMeetYou.debug.xcconfig"; path = "Target Support Files/Pods-WantToMeetYou/Pods-WantToMeetYou.debug.xcconfig"; sourceTree = "<group>"; };
 		E518921C92833E043DCB5D43 /* Pods_WantToMeetYou.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WantToMeetYou.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -107,6 +109,7 @@
 				785749D22A485F020032B9A4 /* AppDelegate.swift */,
 				785749D42A485F020032B9A4 /* SceneDelegate.swift */,
 				785749E92A4864B90032B9A4 /* SecretData.swift */,
+				785749EC2A486C080032B9A4 /* GoogleService-Info.plist */,
 				785749E02A485F030032B9A4 /* Info.plist */,
 				785749DB2A485F030032B9A4 /* Assets.xcassets */,
 			);
@@ -125,6 +128,7 @@
 				785749CC2A485F020032B9A4 /* Frameworks */,
 				785749CD2A485F020032B9A4 /* Resources */,
 				E4816CD8FF11B5AB871835CD /* [CP] Copy Pods Resources */,
+				E0F51F722F8EF3A86A3188E3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -174,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				785749DF2A485F030032B9A4 /* LaunchScreen.storyboard in Resources */,
+				785749ED2A486C080032B9A4 /* GoogleService-Info.plist in Resources */,
 				785749DC2A485F030032B9A4 /* Assets.xcassets in Resources */,
 				785749DA2A485F020032B9A4 /* Main.storyboard in Resources */,
 			);
@@ -202,6 +207,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0F51F722F8EF3A86A3188E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WantToMeetYou/Pods-WantToMeetYou-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WantToMeetYou/Pods-WantToMeetYou-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WantToMeetYou/Pods-WantToMeetYou-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E4816CD8FF11B5AB871835CD /* [CP] Copy Pods Resources */ = {
