@@ -1,5 +1,5 @@
 //
-//  DataService.swift
+//  UsersGroupDataService.swift
 //  WantToMeetYou
 //
 //  Created by Александр Смородов on 25.06.2023.
@@ -9,22 +9,12 @@ import Foundation
 import FirebaseAuth
 import FirebaseDatabase
 
-class DataService {
+class UsersGroupDataService {
     
-    var ref = Database.database(url: SecretData.URLS.firebaseRTDB).reference()
+    private var ref: DatabaseReference
     
-    func createUserAccount(email: String, password: String) {
-        Auth.auth().createUser(withEmail: email, password: password) { [weak self] authResult, error in
-            guard let `self` = self else { return }
-            
-            if let error = error {
-                print(error.localizedDescription)
-            } else if let user = authResult?.user {
-                let profile = UserProfile(uid: user.uid)
-                
-                self.ref.child("user_profiles").child(user.uid).setValue(profile.json)
-            }
-        }
+    init(_ ref: DatabaseReference) {
+        self.ref = ref
     }
     
     func createUsersGroup() {
